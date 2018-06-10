@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="362.0" prefWidth="543.0" styleClass="back" stylesheets="@customer.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="automobiles.ProductDescriptionController">
+   <children>
+      <TextField fx:id="color" layoutX="138.0" layoutY="209.0" opacity="0.84" prefHeight="25.0" prefWidth="279.0" promptText="Color" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Arial Black" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Model" layoutX="135.0" layoutY="162.0" opacity="0.84" prefHeight="25.0" prefWidth="279.0" promptText="Model No" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Arial Black" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Eno" layoutX="138.0" layoutY="120.0" opacity="0.84" prefHeight="25.0" prefWidth="279.0" promptText="Engine No" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Arial Black" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="fuel" layoutX="138.0" layoutY="255.0" opacity="0.84" prefHeight="25.0" prefWidth="279.0" promptText="Fuel" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Arial Black" size="11.0" />
+         </font>
+      </TextField>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="127.0" layoutY="315.0" onAction="#InsertProductdesc" opacity="0.89" prefHeight="25.0" prefWidth="78.0" ripplerFill="#e1e1e1" text="SUBMIT" textFill="WHITE" />
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="375.0" layoutY="315.0" onAction="#Back" opacity="0.89" prefHeight="25.0" prefWidth="78.0" ripplerFill="#e1e1e1" text="Back" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="90.0" layoutY="36.0" prefHeight="42.0" prefWidth="369.0" styleClass="label1" text="PRODUCT SPECIFICATION" textFill="#1b0101" wrapText="true">
+         <font>
+            <Font name="Arial Black" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

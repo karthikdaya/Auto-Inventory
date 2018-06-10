@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="1000.0" styleClass="back" stylesheets="@customer.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="automobiles.SupplieController">
+   <children>
+      <TextField fx:id="S_Id" layoutX="40.0" layoutY="132.0" opacity="0.77" prefHeight="33.0" prefWidth="279.0" promptText="Supplier ID" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="S_name" layoutX="40.0" layoutY="177.0" opacity="0.77" prefHeight="33.0" prefWidth="279.0" promptText="Name" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="S_Add" alignment="TOP_LEFT" layoutX="40.0" layoutY="223.0" opacity="0.77" prefHeight="62.0" prefWidth="279.0" promptText="Address" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="S_contact" layoutX="40.0" layoutY="307.0" opacity="0.77" prefHeight="33.0" prefWidth="279.0" promptText="Contact No" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </TextField>
+      <JFXButton id="dark-blue" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="134.0" layoutY="384.0" onAction="#InsertSupplie" opacity="0.89" prefHeight="35.0" prefWidth="92.0" ripplerFill="#e1e1e1" text="SUBMIT" textFill="WHITE" />
+      <Separator layoutX="360.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="450.0" prefWidth="0.0" />
+      <TableView fx:id="Supply" layoutX="384.0" layoutY="15.0" prefHeight="374.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="Supplie_Id" prefWidth="109.0" text="Supplie Id" />
+          <TableColumn fx:id="S_Name" prefWidth="154.0" text="Supplie Name" />
+            <TableColumn fx:id="S_Address" prefWidth="183.0" text="Address" />
+            <TableColumn fx:id="S_Contact" minWidth="0.0" prefWidth="153.0" text="Contact" />
+        </columns>
+      </TableView>
+      <JFXButton id="dark-blue" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="428.0" layoutY="401.0" onAction="#LoadSupplie" opacity="0.89" prefHeight="35.0" prefWidth="92.0" ripplerFill="#e1e1e1" text="Load" textFill="WHITE" />
+      <JFXButton id="dark-blue" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="812.0" layoutY="402.0" onAction="#back" opacity="0.89" prefHeight="35.0" prefWidth="92.0" ripplerFill="#e1e1e1" text="Back" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="17.0" layoutY="32.0" prefHeight="46.0" prefWidth="326.0" styleClass="label1" text="SUPPLIER" wrapText="true">
+         <font>
+            <Font name="Arial Black" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="deletebutton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="619.0" layoutY="407.0" onAction="#DeleteSelected" opacity="0.89" prefHeight="25.0" prefWidth="94.0" ripplerFill="#e1e1e1" text="Delete" textFill="WHITE" />
+   </children>
+</AnchorPane>

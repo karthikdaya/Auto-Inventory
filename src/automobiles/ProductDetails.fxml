@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="463.0" prefWidth="900.0" styleClass="back" stylesheets="@customer.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="automobiles.ProductDetailsController">
+   <children>
+      <TextField fx:id="mno" layoutX="38.0" layoutY="148.0" opacity="0.89" prefHeight="25.0" prefWidth="279.0" promptText="Model No" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="CC" layoutX="39.0" layoutY="206.0" opacity="0.89" prefHeight="25.0" prefWidth="279.0" promptText="CC" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="Seat" layoutX="39.0" layoutY="262.0" opacity="0.89" prefHeight="25.0" prefWidth="279.0" promptText="Seat Capacity" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="price" layoutX="39.0" layoutY="316.0" opacity="0.89" prefHeight="25.0" prefWidth="279.0" promptText="Price" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></TextField>
+      <JFXButton id="dark-blue" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="35.0" layoutY="398.0" onAction="#InsertProduct" opacity="0.89" prefHeight="0.0" prefWidth="94.0" ripplerFill="#e1e1e1" text="SUBMIT" textFill="WHITE" />
+      <JFXButton id="dark-blue" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="189.0" layoutY="398.0" onAction="#HomePage" opacity="0.89" prefHeight="25.0" prefWidth="139.0" ripplerFill="#e1e1e1" text="Go to Home Page" textFill="WHITE" />
+      <TableView fx:id="product" layoutX="387.0" layoutY="16.0" prefHeight="402.0" prefWidth="501.0">
+        <columns>
+          <TableColumn fx:id="MODEL" prefWidth="104.0" text="MODEL NO" />
+          <TableColumn fx:id="CUBIC" prefWidth="131.0" text="CUBIC CAPACITY" />
+            <TableColumn fx:id="SEAT" prefWidth="118.0" text="SEAT CAPACITY" />
+            <TableColumn fx:id="PRICE" prefWidth="147.0" text="PRICE" />
+        </columns>
+      </TableView>
+      <Separator layoutX="360.0" layoutY="1.0" orientation="VERTICAL" prefHeight="463.0" prefWidth="0.0" />
+      <JFXButton id="dark-blue" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="530.0" layoutY="423.0" onAction="#Loadproduct" opacity="0.89" prefHeight="25.0" prefWidth="94.0" ripplerFill="#e1e1e1" text="Load" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="8.0" layoutY="40.0" prefHeight="45.0" prefWidth="339.0" styleClass="label1" text="PRODUCT DETAILS" wrapText="true">
+         <font>
+            <Font name="FontAwesome" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="deletebutton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="764.0" layoutY="423.0" onAction="#DeleteSelected" opacity="0.89" prefHeight="25.0" prefWidth="94.0" ripplerFill="#e1e1e1" text="Delete" textFill="WHITE" />
+   </children>
+</AnchorPane>
